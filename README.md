@@ -141,4 +141,3 @@ Für Apps gelten zusätzliche Regeln: Lesbarkeit und Benutzerfreundlichkeit müs
 
 - **Gestaltung für kurze Lesezeiten**: In Apps wird oft nur kurz und in kleinen Häppchen gelesen. Text sollte daher möglichst klar und prägnant formuliert sein, da Nutzer Apps oft in Bewegung verwenden.
 
-Durch diese tiefere Betrachtung von Typografie im digitalen Kontext wird deutlich, wie die Kombination von gestalterischen und technischen Elementen eine einheitliche und ansprechende Nutzererfahrung schaffen kann.
