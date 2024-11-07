@@ -7,10 +7,56 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet" />
 
         <style>
+            /*---------------------
+         RESET
+         ---------------------*/
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            /*---------------------
+         LAYOUT
+         ---------------------*/
+
+            .multi-col {
+                column-count: 3;
+            }
+
+            .faux-multi-col {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1em;
+            }
+
+            .faux-multi-col > * {
+                width: 33.33%;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            ul,
+            ol,
+            figure,
+            section {
+                margin-bottom: 1rem;
+            }
+
+            body {
+                padding: 1rem;
+            }
+
             /*---------------------
          TYPOGRAPHY
          ---------------------*/
@@ -20,7 +66,23 @@
                 font-optical-sizing: auto;
                 font-weight: 300;
                 font-style: normal;
-                font-size: 18px;
+                /*font-size: 18px;*/
+            }
+
+            /**-----
+            Typography Fonts
+            -----**/
+
+            .petrona {
+                font-family: "Petrona";
+            }
+
+            .fliesstext {
+                font-family: "Petrona";
+            }
+
+            h4 {
+                font-family: "Work Sans", sans-serif;
             }
 
             .my-italic {
@@ -39,10 +101,21 @@
             h2 {
                 font-size: 2em;
             }
+            
+            
+            h4 {
+                font-size: 1.06em;
+            }
+            
+            .fliesstext,
+            h4 {
+                line-height: 1.3;
+            }
         </style>
     </head>
     <body>
-        <h1>Work Sans</h1>
+        <p>Schriftmuster</p>
+        <h1>Work Sans & <span class="petrona">Petrona</span></h1>
 
         <p>
             abcdefghijklmnopqrstuvwxyzäöüß<br />
@@ -66,5 +139,38 @@
         <h4>Überschrift 4</h4>
         <h5>Überschrift 5</h5>
         <h6>Überschrift 6</h6>
+
+        <section class="fliesstext multi-col">
+            <p>
+                Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen.
+                Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen.
+            </p>
+            <h4>Zwischenüberschrift</h4>
+            <p>
+                Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. Sehr
+                bekannt ist dieser: The quick brown fox jumps over the lazy old dog.
+            </p>
+            <p>
+                Oft werden in Typoblindtexte auch fremdsprachige Satzteile eingebaut (AVAIL® and Wefox™ are testing
+                aussi la Kerning), um die Wirkung in anderen Sprachen zu testen. In Lateinisch sieht zum Beispiel fast
+                jede Schrift gut aus. Quod erat demonstrandum.
+            </p>
+        </section>
+
+        <section class="fliesstext faux-multi-col">
+            <p>
+                Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen.
+                Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen.
+            </p>
+            <p>
+                Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«. Sehr
+                bekannt ist dieser: The quick brown fox jumps over the lazy old dog.
+            </p>
+            <p>
+                Oft werden in Typoblindtexte auch fremdsprachige Satzteile eingebaut (AVAIL® and Wefox™ are testing
+                aussi la Kerning), um die Wirkung in anderen Sprachen zu testen. In Lateinisch sieht zum Beispiel fast
+                jede Schrift gut aus. Quod erat demonstrandum.
+            </p>
+        </section>
     </body>
 </html>
